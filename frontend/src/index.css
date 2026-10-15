@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-navy: #0f172a;
+  --color-navy-muted: #334155;
+  --color-accent: #2563eb;
+  --color-accent-soft: #dbeafe;
+  --color-surface: #fafaf9;
+  --color-border: #e2e8f0;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  @apply bg-[var(--color-surface)] text-[var(--color-navy)] font-sans antialiased;
+}
+
+a {
+  @apply text-[var(--color-accent)] hover:underline;
+}
